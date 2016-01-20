@@ -1,0 +1,16 @@
+{
+  "name": "phyloviz_module",
+  "version": "1.0.0",
+  "description": "phyloviz graph",
+  "main": "index.js",
+  "dependencies": {
+    "phyloviz_bundle": "0.0.2",
+    "profile_generator": "0.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
