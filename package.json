@@ -4,8 +4,8 @@
   "description": "phyloviz graph",
   "main": "index.js",
   "dependencies": {
-    "phyloviz_bundle": "0.0.2",
-    "profile_generator": "0.0.6"
+    "phyloviz_bundle": "0.0.5",
+    "profile_generator": "0.0.7"
   },
   "devDependencies": {},
   "scripts": {

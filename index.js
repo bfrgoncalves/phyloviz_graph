@@ -2,11 +2,11 @@ var phyloviz_graph = require('phyloviz_bundle');
 var random_profiles = require('profile_generator');
 
 var options = {
-	profile_length: 10,
-	number_of_profiles: 300,
-	min: 1,
-	max: 4,
-	is_int:true
+	profile_length: 10, //default 7
+	number_of_profiles: 300, //default 10
+	min: 1, //default 1
+	max: 4, //default 7
+	distribution: 'poisson' //default "normal"
 }
 
 var input = {
@@ -23,11 +23,13 @@ var input = {
 }
 
 var canvasID = 'testDiv';
+var phylovizObject = {};
 
 random_profiles(options, function(profileData){
 	input.profiles = profileData.profiles;
 	input.schemegenes = profileData.schemegenes;
 	phyloviz_graph(input, canvasID, function(graphObject){
+			phylovizObject = graphObject;
 			console.log(graphObject);
 	});
 });
